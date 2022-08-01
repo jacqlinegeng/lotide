@@ -12,7 +12,7 @@ const findKey = function(object, callback) {
   for (let key in object) { // for..in loop is used for objects
     if (callback(object[key])) return key; // the callback argument is x.stars === 2, which gets summed into callback
     //object[key].star === 2 <== this is not used because we want function to have reusability
-    //console.log(object[key]);
+    console.log(object[key]);
   }
 };
 
@@ -25,5 +25,5 @@ const check = findKey({
   "Akelarre":  { stars: 2 }
 }, x => x.stars === 6); // => "noma"
 
-//console.log(check)
+// //console.log(check)
 assertEqual(check, "Ora");
