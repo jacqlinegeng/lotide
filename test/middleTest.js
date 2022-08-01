@@ -4,7 +4,7 @@ const assert = require('chai').assert;
 // const assertArraysEqual = require('../assertArraysEqual');
 const middle = require('../middle');
 
-describe("middleTest", () => {
+describe("#middleTest", () => {
   it("returns [26] for [1, 5, 26, 7, 8]", () => {
     assert.deepEqual(middle([1, 5, 26, 7, 8]), [26]);
   });
