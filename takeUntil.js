@@ -3,14 +3,10 @@ const eqArrays = require('./eqArrays');
 const assertArraysEqual = require('./assertArraysEqual');
 
 const takeUntil = function(array, callback) {
-  // take a slice of the array from the beginning
+
   const results = [];
   for (let item of array) {
-    // if (!callback(item)) {
-    //   results.push(item);
-    // } else {
-    //   return results;  // stop when the callback returns a truthy value
-    // }
+ 
     if (!callback(item)) {
       results.push(item);
     }
